@@ -4,22 +4,17 @@ MAINTAINER Oleksiy Dovzhanitsya <oleksdovz@gmail.com>
 
 USER jenkins
 ENV MASTER localhost
-ADD 	build-flow-extensions-plugin.hpi		/usr/share/jenkins/ref/plugins/
-ADD 	build-flow-plugin.hpi		/usr/share/jenkins/ref/plugins/
-ADD 	build-flow-test-aggregator.hpi		/usr/share/jenkins/ref/plugins/
-ADD 	buildgraph-view.hpi		/usr/share/jenkins/ref/plugins/
-ADD 	flow.hpi		/usr/share/jenkins/ref/plugins/
-ADD 	global-post-script.hpi		/usr/share/jenkins/ref/plugins/
-ADD 	groovy.hpi		/usr/share/jenkins/ref/plugins/
-ADD 	groovy-label-assignment.hpi		/usr/share/jenkins/ref/plugins/
-ADD 	groovy-postbuild.hpi		/usr/share/jenkins/ref/plugins/
-ADD 	groovy-remote.hpi		/usr/share/jenkins/ref/plugins/
-ADD 	jira.hpi		/usr/share/jenkins/ref/plugins/
-ADD 	jira-trigger.hpi		/usr/share/jenkins/ref/plugins/
-ADD 	job-dsl.hpi		/usr/share/jenkins/ref/plugins/
-ADD 	jobgenerator.hpi		/usr/share/jenkins/ref/plugins/
-ADD 	matrix-groovy-execution-strategy.hpi		/usr/share/jenkins/ref/plugins/
-ADD 	simple-build-for-pipeline.hpi		/usr/share/jenkins/ref/plugins/
-ADD 	simple-parameterized-builds-report.hpi		/usr/share/jenkins/ref/plugins/
-ADD 	swarm.hpi		/usr/share/jenkins/ref/plugins/
-
+ADD 	http://mirrors.jenkins-ci.org/plugins/build-flow-extensions-plugin/latest/build-flow-extensions-plugin.hpi		/usr/share/jenkins/ref/plugins/
+ADD 	http://mirrors.jenkins-ci.org/plugins/build-flow-plugin/latest/build-flow-plugin.hpi		/usr/share/jenkins/ref/plugins/
+ADD 	http://mirrors.jenkins-ci.org/plugins/build-flow-test-aggregator/latest/build-flow-test-aggregator.hpi		/usr/share/jenkins/ref/plugins/
+ADD 	http://mirrors.jenkins-ci.org/plugins/buildgraph-view/latest/buildgraph-view.hpi		/usr/share/jenkins/ref/plugins/
+ADD 	http://mirrors.jenkins-ci.org/plugins/flow/latest/flow.hpi		/usr/share/jenkins/ref/plugins/
+ADD 	http://mirrors.jenkins-ci.org/plugins/global-post-script/latest/global-post-script.hpi		/usr/share/jenkins/ref/plugins/
+ADD 	http://mirrors.jenkins-ci.org/plugins/groovy/latest/groovy.hpi		/usr/share/jenkins/ref/plugins/
+ADD 	http://mirrors.jenkins-ci.org/plugins/groovy-label-assignment/latest/groovy-label-assignment.hpi		/usr/share/jenkins/ref/plugins/
+ADD 	http://mirrors.jenkins-ci.org/plugins/groovy-postbuild/latest/groovy-postbuild.hpi		/usr/share/jenkins/ref/plugins/
+ADD 	http://mirrors.jenkins-ci.org/plugins/groovy-remote/latest/groovy-remote.hpi		/usr/share/jenkins/ref/plugins/
+ADD 	http://mirrors.jenkins-ci.org/plugins/job-dsl/latest/job-dsl.hpi		/usr/share/jenkins/ref/plugins/
+ADD 	http://mirrors.jenkins-ci.org/plugins/jobgenerator/latest/jobgenerator.hpi		/usr/share/jenkins/ref/plugins/
+ADD 	http://mirrors.jenkins-ci.org/plugins/matrix-groovy-execution-strategy/latest/matrix-groovy-execution-strategy.hpi		/usr/share/jenkins/ref/plugins/
+ADD 	http://mirrors.jenkins-ci.org/plugins/swarm/latest/swarm.hpi		/usr/share/jenkins/ref/plugins/
