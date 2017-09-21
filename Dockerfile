@@ -18,3 +18,5 @@ ADD 	http://mirrors.jenkins-ci.org/plugins/job-dsl/latest/job-dsl.hpi		/usr/shar
 ADD 	http://mirrors.jenkins-ci.org/plugins/jobgenerator/latest/jobgenerator.hpi		/usr/share/jenkins/ref/plugins/
 ADD 	http://mirrors.jenkins-ci.org/plugins/matrix-groovy-execution-strategy/latest/matrix-groovy-execution-strategy.hpi		/usr/share/jenkins/ref/plugins/
 ADD 	http://mirrors.jenkins-ci.org/plugins/swarm/latest/swarm.hpi		/usr/share/jenkins/ref/plugins/
+
+RUN chmod -R 777  /usr/share/jenkins/ref/plugins/*
