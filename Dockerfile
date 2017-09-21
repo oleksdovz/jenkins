@@ -2,7 +2,7 @@ FROM jenkins:latest
 
 MAINTAINER Oleksiy Dovzhanitsya <oleksdovz@gmail.com>
 
-USER jenkins
+USER root
 ENV MASTER localhost
 ADD 	http://mirrors.jenkins-ci.org/plugins/build-flow-extensions-plugin/latest/build-flow-extensions-plugin.hpi		/usr/share/jenkins/ref/plugins/
 ADD 	http://mirrors.jenkins-ci.org/plugins/build-flow-plugin/latest/build-flow-plugin.hpi		/usr/share/jenkins/ref/plugins/
@@ -20,3 +20,5 @@ ADD 	http://mirrors.jenkins-ci.org/plugins/matrix-groovy-execution-strategy/late
 ADD 	http://mirrors.jenkins-ci.org/plugins/swarm/latest/swarm.hpi		/usr/share/jenkins/ref/plugins/
 
 RUN chmod -R 777  /usr/share/jenkins/ref/plugins/*
+
+USER jenkins
